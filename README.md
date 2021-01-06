@@ -1,1 +1,1 @@
-"# TTP-Residency-Assignments" 
+TTP-Residency-Assignments
