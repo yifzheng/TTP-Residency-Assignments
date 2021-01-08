@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5: DOM Challenges III</title>
+    <script src="add.js" async></script>
+    <script src="remove.js" async></script>
+    <script src="color.js" async></script>
+    <script src="clear.js" async></script>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="addRow()" class="btnAdd">Add Row</button>
+        <button onclick="removeRow()" class="btnRemove">Delete Row</button>
+        <button onclick="addColumn()" float="left" class="btnAdd">Add Column</button>
+        <button onclick="removeColumn()" class="btnRemove">Delete Column</button>
+        <div class="dropdown">
+            <button id = "btn" class="btnColor">Color</button>
+            <div class="dropdown-content">
+                <option value="azure" id="azure"  onclick="changeAzure()">Azure</option>
+                <option value="orange" id="orange"  onclick="changeOrange()">Orange</option>
+                <option value="red" id="red" onclick="changeRed()">Red</option>
+                <option value="blue" id="blue" onclick="changeBlue()">Blue</option>
+                <option value="green" id="green" onclick="changeGreen()">Green</option>
+            </div>
+        </div>
+        <button class="btnColor" id="btnFill" onclick="fillAll()">Fill All</button>
+        <button class="btnColor2" id="btnFill2" onclick="fillRest()">Fill Rest</button>
+        <button class="btnClear" onclick="clearAll()">Clear all</button>
+    </div>
+    <table id="grid" style="margin-top: .2%; margin-left: .2%; margin-right: .2%;"></table>
+</body>
+
+</html>
