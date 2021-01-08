@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment #4: DOM Challenges II</title>
+    <style>
+        #hoverButton {
+            width: 1000px;
+            height: 300px;
+            border-radius: 50px;
+            font-size: 3em;
+            text-align: center;
+            margin-left: 23%;
+            margin-right: 25%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color: bisque;
+        }
+
+        #formButton, #circleButton{
+            width: 300px;
+            height: 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            text-align: center;
+            margin-left: 42%;
+            margin-right: 42%;
+            margin-top: 5%;
+            background-color: bisque;
+        }
+        #button1{
+            width: 300px;
+            height: 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 2%;
+            background-color: bisque;
+        }
+        #button2{
+            width: 300px;
+            height: 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            text-align: center;
+            float: left;
+            margin-left: 29%;
+            margin-top: 2%;
+            background-color: bisque;
+        }
+        p{
+            text-align: center;
+            color: black;
+            font-size: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="hover.js" async></script>
+</head>
+
+<body>
+    <button id="hoverButton">DON'T HOVER OVER ME</button>
+    <button id = "formButton" onclick="location.href = 'form.html'">Form Page</button>
+    <button id = "circleButton" onclick="location.href = 'circle.html'">Calculate Volume of Sphere</button>
+    <p id="imRight" class="show">I'm right</p>
+    <p id="noImRight" class="show"> No, I'm right</p>
+    <button  type = "button" id = "button1">I'm right</button>
+    <button  type = "button" id = "button2">No, I'm right</button>
+  <script src="script1.js"></script>
+</body>
+    
+</html>
